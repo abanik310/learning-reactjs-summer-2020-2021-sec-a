@@ -1,0 +1,22 @@
+export const users = [
+    {
+        id:'1', 
+        name:'Anik', 
+        dept:'CSSE'
+    },
+    {
+        id:'2', 
+        name:'Akash', 
+        dept:'SE'
+    },
+    {
+        id:'3', 
+        name:'Faisal', 
+        dept:'CSE'
+    },
+    {
+        id:'4', 
+        name:'Afridi', 
+        dept:'IPE'
+    }
+];

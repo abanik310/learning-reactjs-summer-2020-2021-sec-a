@@ -1,7 +1,11 @@
 import UserList from './components/UserList';
 import {users} from './components/userData';
+import Registration from './components/Registration';
+import Login from './components/Login';
+import NavBar from './components/NavBar';
 import {useState} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
 
 function App() {
 
@@ -15,16 +19,16 @@ function App() {
 
   return (
     <Router>
+      <div>
+      <NavBar />
+      </div>
         <Switch>
-            <Route exect path='/'>
-            <div>
-                <UserList list={userlist} deleteCallback={deleteUser}/>
-            </div>
+            <Route exact path='/'>
+            <h1>Welcome to the Online Shop Management System!!!</h1>
             </Route>
-
-            <Route path='/edit/'>
-                Edit Form
-            </Route>
+            <Route path='/registration' ><Registration /></Route>
+            <Route path='/login' ><Login /></Route>
+            
 
             <Route path='*'>
                 404 not found
